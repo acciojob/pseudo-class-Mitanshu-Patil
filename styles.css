@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+/* Style the main container */
+#container {
+  margin: 20px;
+  font-size: 18px;
+  color: #000;
+  padding: 10px;
+}
+
+/* Insert content before the container */
+#container::before {
+  content: "Before Element ";
+  color: #f00;
+  font-size: 20px;
+}
+
+/* Insert content after the container */
+#container::after {
+  content: " After Element";
+  color: #f00;
+  font-size: 20px;
+}
